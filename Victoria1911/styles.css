@@ -1,0 +1,761 @@
+
+html {
+    max-width: 1200px;
+}
+
+body {
+    max-width: 75%;
+    font-family: "Ledger", serif;
+    padding: 0;
+    margin: 0 auto;
+}
+
+h1 h2 h3 {
+    display: grid;
+    font-family: "Dancing Script", cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 24% 48% 24%;
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 2%;
+}
+
+/* header */
+
+header {grid-area: header;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 24% 48% 24%;
+    font-size: 75%;
+    grid-gap: 2%;
+}
+
+.address {
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.phone {
+    padding-top: 20px;
+    grid-column: 4/5;
+    text-align: center;
+}
+
+/* navigation */
+
+nav {
+    grid-area: nav;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    grid-template-columns: repeat(3, 32%);
+    grid-gap: 2%;
+    font-family: "Dancing Script", cursive;
+    align-self: center;
+    text-align: center;
+    overflow: hidden;
+    color: #000000;
+    font-size: 20px;
+    border-bottom: 2px solid darkviolet;
+}
+
+nav div a{
+    display: grid;
+
+}
+
+nav div a:link {text-decoration: none;
+    color: #000000;
+}
+
+nav div a:visited {
+    color: #000000;
+}
+
+nav div a:hover {
+    color: #9400d3;
+    font-size: 110%;
+
+}
+
+nav .dropbtn {
+    color: #000000;
+    padding: 5px;
+    border: none;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+}
+
+nav .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 300px;
+    z-index: 1;
+}
+
+nav .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+nav .dropdown-content a:hover {color: #9400d3;}
+
+div .dropdown:hover .dropdown-content { display: block;}
+
+div .dropdown:hover .dropbtn {color: #9400d3; font-size: 110%;}
+
+
+
+ main {grid-column: 1 / 4;
+     grid-row: 3 / 4;
+     display: grid;
+
+ }
+
+ #orchid{
+     display: grid;
+     grid-template-columns: repeat(4, 22%);
+     margin-bottom: 20px;
+     grid-gap: 4%;
+ }
+
+ #image {
+     display: grid;
+     grid-column: 1/3;
+
+ }
+
+#front {
+    display: grid;
+     grid-column: 3/5;
+     align-self: center;
+     justify-self: center;
+     font-family: "Dancing Script", cursive;
+     line-height: 4em;
+     letter-spacing: 6px;
+     font-size: 130%;
+ }
+
+ #front h3 {
+     text-align: center;
+ }
+
+ #front p {
+     text-align: center;
+ }
+
+ aside {grid-area: aside;}
+
+#services {
+     grid-column: 1 / 4;
+     grid-row: 4 / 5;
+     display: grid;
+    justify-content: center;
+
+ }
+
+#services{
+     font-family: "Dancing Script", cursive;
+     grid-template-columns: repeat(3, 32%);
+     grid-gap: 2%;
+ }
+
+#services div {
+    margin: 20px 10px;
+    padding: 10px 20px;
+    align-content: center;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+}
+
+#services div a {
+    letter-spacing: .25em;
+    color: #000000;
+}
+
+
+/* styles for Footer */
+
+
+footer {grid-area: footer;
+    height: auto;
+     grid-column: 1 / 4;
+     grid-row: 5 / 6;
+     display: grid;
+     grid-template: 40px/ 25% 50% 25%;
+     text-align: center;
+     grid-gap: 10px;
+     border-top: 2px solid #9400d3;
+
+ }
+footer div.copy {
+    display: grid;
+    grid-column: 1/2;
+}
+
+footer div p {
+    display: grid;
+    font-size: 70%;
+    text-align: center;
+}
+
+footer div.footernav {
+    display: grid;
+    font-size: 70%;
+    grid-column: 1/3;
+    grid-template-columns: repeat(5, 20%);
+    color: #000000;
+    padding-top: 20px;
+}
+
+
+.footernav div a {
+     width: 125px;
+     color: #000000;
+ }
+
+.footernav div a:link {
+     text-decoration: none;
+ }
+
+.footernav div a:visited {
+    color: #000000;
+}
+
+.footernav div a:hover {
+     color: #9400d3;
+ }
+
+footer div.SocialMedia {
+    display: grid;
+     grid-column: 3/4;
+     grid-template-columns: 1fr 1fr;
+ }
+footer div.SocialMedia div {
+    justify-content: center;
+    display: grid;
+    width: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* styles for Lash Extensions page */
+
+main#lashes
+
+#lashes {
+    grid-template: 120px auto / 45% 45%;
+    grid-column-gap: 10%;
+    margin: 20px 0;
+}
+
+#windows {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin: 10px 0 20px;
+    align-content: center;
+    justify-content: center;
+    max-height: 120px;
+
+}
+
+#windows h1 {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    font-family: "Dancing Script", cursive;
+    font-size: 32px;
+    max-height: max-content;
+    letter-spacing: .25em;
+    text-align: center;
+}
+
+#windows #indent {
+    text-indent: 20px;
+}
+section {grid-area: section;}
+section.lashSection  {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-content: center;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slideshow-container {
+    max-width: 300px;
+    max-height: 300px;
+    position: relative;
+    padding: 10px;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+
+main#lashes article.dos {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#lashes #lashcare {
+    font-family: "Ledger", serif;
+    display: grid;
+    justify-self: center;
+    grid-gap: 0;
+}
+
+#lashes #lashcare .do-heading {
+    display: grid;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    margin-top: 30px;
+    padding: 0;
+    font-size: 24px;
+
+}
+
+main#lashes div#lashcare img {
+    display: grid;
+    justify-self: center;
+}
+
+main#lashes div#lashcare ul {
+    display: grid;
+    justify-self: center;
+}
+
+
+
+/*styles for skin care page*/
+
+
+
+
+#skincare {
+    display: grid;
+    grid-row: 3/4;
+    grid-column: 1/4;
+    grid-template-columns: repeat(3, 32%);
+    grid-column-gap: 1.5%;
+
+}
+
+h2 {
+    grid-column: 1/4;
+    display: grid;
+    font-family: "Dancing Script", cursive;
+}
+
+p.facial1 {
+    display: grid;
+    grid-column: 1/2;
+}
+
+#skincare img#facialmask {
+    display: grid;
+    grid-column: 2/3;
+    margin-top: 100px;
+}
+
+p.facial2 {
+    display: grid;
+    grid-column: 3/4;
+}
+
+#facials{
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 4/5;
+    justify-self: center;
+    grid-template-columns: repeat(3, 30%);
+    grid-column-gap: 1.5%;
+}
+
+.facialtype h3{
+    display: grid;
+    text-align: center;
+}
+
+.facialtype p{
+    font-family: "Ledger", serif;
+}
+
+#classic {
+    grid-column: 1/2;
+}
+
+#micro {
+    grid-column: 2/3;
+}
+
+#peel {
+    grid-column: 3/4;
+}
+
+
+
+/* styles for waxing page*/
+
+
+#waxed {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    grid-template-columns: 47% 47%;
+    grid-column-gap: 6%;
+    margin: 10px auto 20px;
+    padding-bottom: 24px;
+}
+
+#waxing {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-content: space-around;
+}
+
+
+div main h3 {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 10px 0;
+    padding: 0;
+}
+.wax  {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+div main p {
+    display: grid;
+    grid-column: 1/2;
+    padding: 0;
+    margin: 10px 0;
+}
+
+
+div main h2 {
+    display: grid;
+    margin: 10px 0;
+    padding: 0;
+    font-family: "Dancing Script", cursive;
+    font-size: xx-large;
+}
+
+#benefits {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#benefits h2 {
+    grid-column: 1/2;
+    font-size: xx-large;
+
+}
+#benefits ul {
+    display: grid;
+    grid-column: 1/2;
+    margin: 0;
+    padding: 0;
+}
+
+#benefits ul li {
+    display: grid;
+    grid-column: 1/2;
+    font-family: "Ledger", serif;
+}
+
+#benefits img{
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+/* styles for About Me page*/
+
+
+
+#meetVictoria {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    margin: 5px;
+    border-bottom: 2px solid #9400d3;
+}
+
+#meetVictoria h2 {
+    height: auto;
+
+}
+
+#meetVictoria img {
+    float: left;
+    padding: 10px;
+}
+
+.about {
+    padding: 5px;
+}
+
+#contactMe {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+
+#contactMe h3 {
+    text-align: center;
+    height: 60px;
+    margin-top: 40px;
+    grid-column: 1/2;
+    align-self: center;
+
+}
+fieldset {
+    width: 400px;
+    border: none;
+    grid-column: 2/4;
+    align-self: center;
+}
+
+fieldset ul, fieldset li{
+    list-style-type:none;
+}
+
+fieldset li
+{
+    margin-bottom: 10px;
+}
+
+fieldset label{
+    width:140px;
+    display: inline;
+}
+
+label.radios
+{
+    width:100%;
+    display: inline;
+}
+
+#lblnotes {float: left;}
+
+
+.mobile-container {
+    grid-area: nav;
+    float: right;
+    display: none;
+    width: 750px;
+}
+
+.topnav {
+    float: right;
+    overflow: hidden;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: black;
+    font-family: "Ledger", serif;
+    font-size: 12px;
+    margin: 0 5px;
+    padding: 5px 10px;
+}
+
+.topnav a.icon {
+    clear-side: left;
+    float: right;
+    text-align: right;
+    margin: 5px 10px;
+    padding: 5px 10px;
+}
+
+#hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 959px) {
+    body {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    h1, h2, h3 {
+        font-size: 75%;
+        text-align: center;
+    }
+    header nav footer {
+        font-size: 75%;}
+    nav div a, nav .dropbtn {
+        font-size: 75%;
+    }
+    nav div a:hover, nav .dropdown:hover, nav .dropdown .dropbtn:hover {
+        color: black;
+        font-size: 15px;
+    }
+    nav .dropdown-content {
+        display: block;
+        font-size: 15px;
+    }
+    div .dropdown:hover .dropbtn {
+        color: black;
+        font-size: 15px;
+    }
+    nav .dropdown .dropdown-content a:hover {
+        color: black;
+        font-size: 15px;
+    }
+    header nav footer {
+        max-height: fit-content;
+        border: none;
+    }
+    #orchid img {
+        max-height: 70%;
+        max-width: 70%;
+    }
+    div.mask  {
+        display: none;
+    }
+p.facial1 {grid-column: 1/4;
+grid-row: 3/4;}
+p.facial2 {grid-column: 1/4;
+grid-row: 4/5;}
+article p {font-size: 75%;}
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    body {grid-template-areas:
+                "head";
+                "nav";
+                "main";
+                "section";
+                "aside";
+                "footer";}
+
+    head{grid-area: head;}
+    nav{grid-area: nav;}
+    main {grid-area: main;}
+    section{grid-area: section;}
+    aside{grid-area: aside;}
+    footer{grid-area: footer;}
+
+
+    #hidden, .mobile-container {
+        display: block
+    }
+
+    #hidden {
+        grid-column: 2/4;
+        text-align: center;
+    }
+
+    .nav, #front {
+        display: none;
+    }
+
+    #image {
+        display: none;
+    }
+
+    #hidden h1 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 76%;
+        text-align: center
+    }
+
+    aside div h3 {
+        font-size: 75%;
+        text-align: center
+    }
+
+    aside div img {
+        height: 65px;
+        width: 65px;
+    }
+
+    fieldset {
+        font-size: 75%;
+    }
+
+    .mobile-container {
+        float: right;
+    }
+
+    .topnav a.icon {
+        color: black;
+        float: right;
+        text-align: right;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px;}
+}

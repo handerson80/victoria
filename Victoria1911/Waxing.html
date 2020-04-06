@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waxing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="java.js">
+        function myFunction() {
+        let x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+    </script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="address">
+            <p>2400 Hennepin Ave.</p>
+            <p>Minneapolis, MN 55405</p>
+        </div>
+        <div class="emptydiv">
+
+        </div>
+        <div>
+            <p class="phone">612-377-3010</p>
+        </div>
+    </header>
+    <div class="mobile-container">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="LashExtensions.html">Lash Extensions</a>
+                <a href="Skincare.html">Skin Care</a>
+                <a href="AboutMe.html">About Me</a>
+            </div>
+
+        </div>
+    </div>
+    <nav class="nav">
+
+        <div><a href="index.html">Home</a></div>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="LashExtensions.html">Lashes</a>
+                <a href="Skincare.html">Skin Care</a>
+                <a href="Waxing.html" id="wax">Waxing</a>
+            </div>
+        </div>
+        <div><a href="AboutMe.html">About Me</a></div>
+    </nav>
+    <div id="waxed">
+        <main id="waxing">
+
+            <h3>
+                Every year, many clients ask me about the ins and outs of waxing. This year, I’ve decided to provide
+                this short post on the Benefits to Waxing. Want to get beach ready? If so, read on!</h3>
+
+            <div class="wax">
+                <img src="images/wax.jpg" alt="legs" width="400px" height="150px">
+            </div>
+
+
+            <h2>Why wax?</h2>
+            <p>Waxing is a safe, economical and reliable way of removing body hair. Unlike shaving, a good wax can keep
+                that unwanted body hair away for as long as 6 weeks. By adding waxing to your beauty regime, you will
+                make your skin glow with radiance while feeling smooth, fresh and clean.
+            </p>
+            <br>
+            <h2>Before and after tips</h2>
+            <ul>
+                <li>Exfoliate the day before your appointment.</li>
+                <li>Don’t apply body lotion on the day of your appointment.</li>
+                <li>Use a deodorant without antiperspirant if you will be getting an underarm wax. The hair comes off
+                    easier.
+                </li>
+                <li>If you are really worried about pain, take one Advil an hour before your appointment.
+                </li>
+                <li>Avoid any hot treatments for 24 hours post-waxing (bath, sauna, steamer, tanning bed).</li>
+            </ul>
+        </main>
+
+        <aside id="benefits">
+            <h2>Benefits of Waxing</h2>
+            <ul>
+                <li>Smooth and even skin. One of the best benefits of waxing is that your skin will feel smooth and
+                    even. When waxing, you not only remove unwanted hair—you also wax away any dry and dead skin cells
+                    in the process!
+                </li>
+                <li>No cuts or bruises. With waxing, you aren’t at risk to any cuts or nicks that can leave you with
+                    scars. This is good news, especially for those who have skin that is susceptible to discoloration
+                    due to even the slightest cut.
+                </li>
+                <li>Stubble free skin – Waxing removes unwanted hair completely, from its roots. Shaving, on the other
+                    hand, often results in stubbles, leaving your skin feeling rough and abrasive.
+                </li>
+                <li>Irritation and allergies-free. There are minimal chemicals involved in the waxing process, so rarely
+                    does waxing cause any skin irritation or allergy.
+                </li>
+                <li>Slow hair re-growth. After waxing, the regrowth of your hair is very slow, often taking 4 to 6
+                    weeks. As well, many say that they have found their hair to be finer, after the regrowth
+                </li>
+            </ul>
+
+            <img src="images/waxingstuff.jpg" alt="wax">
+
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footernav">
+            <div class="nav1"><a href="index.html">Home</a></div>
+            <div class="nav2"><a href="LashExtensions.html">Lash Extensions</a></div>
+            <div class="nav3"><a href="Skincare.html">Skin Care</a></div>
+            <div class="nav4"><a href="Waxing.html">Waxing Services</a></div>
+            <div class="nav5"><a href="AboutMe.html">About Me</a></div>
+        </div>
+        <div class="copy">
+            <p>@ Copyright 2019 Heather A</p>
+        </div>
+        <div class="SocialMedia">
+            <div>
+                <img src="images/facebook.png" alt="facebook">
+            </div>
+            <div>
+                <img src="images/instagram.png" alt="instagram">
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

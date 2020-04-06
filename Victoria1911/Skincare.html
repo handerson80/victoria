@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skin Care</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="java.js">
+        function myFunction() {
+            let x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+    </script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <div class="address">
+            <p>2400 Hennepin Ave.</p>
+            <p>Minneapolis, MN 55405</p>
+        </div>
+        <div class="emptydiv">
+
+        </div>
+        <div>
+            <p class="phone">612-377-3010</p>
+        </div>
+    </header>
+    <div class="mobile-container">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="LashExtensions.html">Lash Extensions</a>
+                <a href="Skincare.html">Skin Care</a>
+                <a href="AboutMe.html">About Me</a>
+            </div>
+
+        </div>
+    </div>
+    <nav class="nav">
+
+        <div><a href="index.html">Home</a></div>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="LashExtensions.html">Lashes</a>
+                <a href="Skincare.html" id="skin">Skin Care</a>
+                <a href="Waxing.html">Waxing</a>
+            </div>
+        </div>
+        <div><a href="AboutMe.html">About Me</a></div>
+    </nav>
+    <main id="skincare">
+        <h2>What happens during a facial?</h2>
+        <br>
+        <p class="facial1">A facial is the most basic way to keep your skin happy and healthy. Spend some time with me and feel the stresses of life melt away while treating your skin in the best way possible. You are sure to leave looking and feeling your best!
+            <br>
+            <br>
+            I start by cleaning away the dust and dirt from your day along with any harmful chemicals with which you may have come in contact, including some found in popular skin care products. Then take a look at your skin under a magnifying light, to see what your skin might be missing to be its best, and to find out where your problem areas lie.</p>
+
+
+        <div class="mask"><img src="images/faciaMask.png" alt="facial mask" height="220px" width="270px" id="facialmask"></div>
+
+
+            <p class="facial2">
+            This skin analysis will determine how the rest of the personalized treatment proceeds, as your skin will need different “food” for different seasons of the year, and of life.
+            <br>
+            <br>
+            A masque specific to your needs is added to your face with a nice warm towel to help this delectable treatment stimulate cell growth, collagen production, and promote healing from past damage. Special tools may be used to treat breakouts, hyper-pigmentation, natural aging, fine lines, and wrinkles. Followed with protective serum, toner, moisturizer and sunscreen, you will be ready to “face” the world.</p>
+
+    </main>
+    <aside id="facials">
+        <article class="facialtype" id="classic">
+            <h3>Classic Facial</h3>
+            <p>The perfect facial for balancing your skin. Includes a deep cleansing, exfoliation, treatment mask, and final hydration for your skin.</p>
+        </article>
+        <article class="facialtype" id="micro">
+            <h3>Microdermabrasion</h3>
+            <p>Skin resurfacing treatment designed to reveal smoother, revitalized skin by way of a deep exfoliation, followed up by a treatment mask, massage and final hydration.</p>
+
+        </article>
+        <article class="facialtype" id="peel">
+            <h3>Classic Peel Facial</h3>
+            <p>Fight external stresses on your skin such as free radicals & UV sun damage by way of a chemical peel, followed by a soothing treatment mask, massage, and final hydration.</p>
+
+        </article>
+
+    </aside>
+
+    <footer>
+        <div class="footernav">
+            <div class="nav1"><a href="index.html">Home</a></div>
+            <div class="nav2"><a href="LashExtensions.html">Lash Extensions</a></div>
+            <div class="nav3"><a href="Skincare.html">Skin Care</a></div>
+            <div class="nav4"><a href="Waxing.html">Waxing Services</a></div>
+            <div class="nav5"><a href="AboutMe.html">About Me</a></div>
+        </div>
+        <div class="copy">
+            <p>@ Copyright 2019 Heather A</p>
+        </div>
+        <div class="SocialMedia">
+            <div>
+                <img src="images/facebook.png" alt="facebook">
+            </div>
+            <div>
+                <img src="images/instagram.png" alt="instagram">
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

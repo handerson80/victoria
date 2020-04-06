@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About me</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+
+
+        function checkMe() {
+
+
+            let error = '';
+            const {getElementById} = document;
+            if(getElementById('name').value === '') {
+                error = 'Please enter your name \n';
+            }
+
+            if(getElementById('email').value ===''){
+                error = 'Please enter your email address \n';
+            }
+
+            if(getElementById('yes').checked === false && getElementById('no').checked === false) {
+                error = 'Please choose a subscription \n';
+            }
+
+            //    do not alter code below this line.
+
+            if(error==='') {return true;}
+
+            else {
+                alert(error);
+                return false;
+
+            }
+        }
+
+
+
+        function myFunction() {
+            let x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+
+            }
+        }
+
+
+    </script>
+</head>
+
+
+<body>
+
+
+
+<div class="container">
+    <header class="header">
+        <div class="address">
+            <p>2400 Hennepin Ave.</p>
+            <p>Minneapolis, MN 55405</p>
+        </div>
+        <div class="emptydiv">
+
+        </div>
+        <div>
+            <p class="phone">612-377-3010</p>
+        </div>
+    </header>
+
+
+    <div class="mobile-container">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="LashExtensions.html">Lash Extensions</a>
+                <a href="Skincare.html">Skin Care</a>
+                <a href="AboutMe.html">About Me</a>
+            </div>
+
+        </div>
+    </div>
+
+        <nav class="nav">
+
+        <div><a href="index.html" id="home">Home</a></div>
+        <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="LashExtensions.html">Lashes</a>
+                <a href="Skincare.html">Skin Care</a>
+                <a href="Waxing.html">Waxing</a>
+            </div>
+        </div>
+        <div><a href="AboutMe.html">About Me</a></div>
+    </nav>
+
+    <main class="aboutMe">
+
+        <section id="meetVictoria">
+
+        <h2>Meet Victoria</h2>
+            <img src="images/victoria.jpg" alt="Victoria" height="200px" width="150px">
+
+            <p class="about">I have been an esthetician (skin care therapist) since graduating from St. Paul College in 2006. I have a passion for making people good about the way they look and love to help teach people about what taking care of their skin really takes. Most people don’t know just how effective good skin care can be for your skin; or how ineffective bad skin care can be. It’s all about the ingredients in the products and the science of how the skin absorbs and uses those ingredients.</p>
+
+            <p class="about">I enjoy being a skin therapist at Sudz Salon in uptown Minneapolis. I work with two of the best skin care lines in the field; Cosmedix and Glymed. I love learning about the ingredients and how and why they work for your skin.
+            </p>
+        </section>
+
+    <aside id="contactMe">
+        <h3>Feel free to contact me
+            <br>if you have any questions</h3>
+
+        <fieldset>
+            <form id="the_form" name="the_form" action="#" method="get" onsubmit="return checkMe();">
+                <ul>
+                    <li><label for="name">Name</label>
+                        <input type="text" name="name" id="name" size="30" />
+                    </li>
+                    <li><label for="service">Service you're inquiring about </label>
+                        <select name="service" id="service">
+                            <option value="Lashes">Lashes</option>
+                            <option value="Skin Care">Skin Care</option>
+                            <option value="Waxing">Waxing</option>
+                        </select>
+                    </li>
+                    <li><label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" size="30" />
+                    </li>
+                    <li><label for="email">Email</label>
+                        <input type="text" name="email" id="email" size="30" />
+                    </li>
+                    <li><label for="comments" id="lblnotes">Commments</label>
+                        <textarea name="comments" id="comments" cols="20" rows="5"></textarea>
+                    </li>
+                    <li><label>Would you like to be added to the salon mailing list?</label> <br>
+                        <label for="Yes" class="radios">Yes</label>
+                        <input type="radio" name="subscription" id="Yes"/>
+
+                        <label for="No" class="radios">No</label>
+                        <input type="radio" name="No" id="No"/>
+                    </li>
+                    <li><label for="submit"> </label>
+                        <button type="submit" id="submit">Send</button> </li>
+                </ul>
+            </form>
+        </fieldset>
+
+
+
+
+
+    </aside>
+    </main>
+    <footer>
+
+        <div class="footernav">
+            <div class="nav1"><a href="index.html">Home</a></div>
+            <div class="nav2"><a href="LashExtensions.html">Lash Extensions</a></div>
+            <div class="nav3"><a href="Skincare.html">Skin Care</a></div>
+            <div class="nav4"><a href="Waxing.html">Waxing Services</a></div>
+            <div class="nav5"><a href="AboutMe.html">About Me</a></div>
+        </div>
+        <div class="copy">
+            <p>@ Copyright 2019 Heather A</p>
+        </div>
+        <div class="SocialMedia">
+            <div>
+                <img src="images/facebook.png" alt="facebook">
+            </div>
+            <div>
+                <img src="images/instagram.png" alt="instagram">
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
